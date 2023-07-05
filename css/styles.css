@@ -36,6 +36,13 @@ body {
     background-color: var(--light-color);
     text-decoration: none;
     font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .header {
@@ -69,13 +76,14 @@ body {
 .menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
 .header-list, .addr-list {
     display: flex;
+    gap: 40px;
 }
-
 
 ul,
 ol {
@@ -93,10 +101,6 @@ a, address {
     color: var(--main-color);
 }
 
-.address {
-    display: flex;
-}
-
 /* logo header */
 .logo {
     display: flex;
@@ -109,6 +113,7 @@ a, address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     padding: 0 24px;
+    margin-right: 76px;
 }
 
 .hlogo-span {
@@ -121,7 +126,7 @@ a, address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-color);
-    padding: 0 24px;
+    padding: 24px 0;
 
 }
 
@@ -268,7 +273,7 @@ a, address {
     box-sizing: border-box;
     background-color: var(--light-color);
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 4px 4px;
     padding: 0;
     margin: 0;
 }
@@ -277,6 +282,11 @@ a, address {
     padding: 0;
     margin: 0;
     display: block;
+}
+
+.team-txt-blk {
+    padding: 32px 16px;
+    
 }
 
 .team-name {
@@ -391,12 +401,7 @@ a, address {
     background-color: var(--main-color);
     color: var(--light-color);
     padding: 100px 0;
-}
-
-.footer-block {
-    box-sizing: border-box;
-    width: 264px;
-    padding: 0;
+    margin-bottom: 0px;
 }
 
 .flogo-span {
@@ -405,11 +410,14 @@ a, address {
 }
 
 .flogo {
+    display: inline-block;
+    margin-bottom: 16px;
     padding: 0;
 } 
 
 .footer-p {
     line-height: 1.5;
+    max-width: 264px;
     color: var(--btn-active);
     letter-spacing: 0.02em;
     font-size: 16px;
