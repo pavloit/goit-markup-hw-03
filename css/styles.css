@@ -338,6 +338,7 @@ a, address {
 
 .portfolio-section {
     text-transform: capitalize;
+    padding-bottom: 120px;
 }
 
 .portfolio-section h3 p {
