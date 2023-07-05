@@ -337,18 +337,17 @@ a, address {
 }
 
 .btn:hover,
-.btn:focus,
-.btn:hover,
 .btn:focus {
     color: var(--light-color);
     background-color: var(--btn-hover);
+    border: 1px solid transparent
 } 
 
 /* portfolio projicts */
 
 .portfolio-section {
     text-transform: capitalize;
-    padding-bottom: 120px;
+    padding: 96px 0 120px 0;
 }
 
 .portfolio-section h3 p {
@@ -373,7 +372,7 @@ a, address {
 }
 
 .card-text-blk {
-    padding: 28px 16px;
+    padding: 32px 16px;
     border: 1px solid var(--btn);
     border-top: none;
 }
